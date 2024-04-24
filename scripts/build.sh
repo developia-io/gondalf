@@ -21,3 +21,4 @@ tar czvf bin/linux/arm64/$bin_name-linux-arm64.tar.gz -C bin/linux/arm64 $bin_na
 tar czvf bin/darwin/amd64/$bin_name-darwin-amd64.tar.gz -C bin/darwin/amd64 $bin_name
 tar czvf bin/darwin/arm64/$bin_name-darwin-arm64.tar.gz -C bin/darwin/arm64 $bin_name
 tar czvf bin/windows/amd64/$bin_name-windows-amd64.tar.gz -C bin/windows/amd64 $bin_name.exe
+tar czvf bin/windows/386/$bin_name-windows-386.tar.gz -C bin/windows/386 $bin_name.exe
