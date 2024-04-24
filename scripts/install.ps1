@@ -8,10 +8,10 @@ $url = "https://github.com/developia-io/gondalf/releases/download/v$version/gond
 Invoke-WebRequest -Uri $url -OutFile "$env:TEMP\gondalf.zip"
 Expand-Archive -Path "$env:TEMP\gondalf.zip" -DestinationPath "$env:ProgramFiles\gondalf" -Force
 
-$gondalfPath = Join-Path -Path "$env:ProgramFiles\gondalf" -ChildPath "gondalf.exe"
+$gondalfDirectory = "$env:ProgramFiles\gondalf"
 $existingPath = [Environment]::GetEnvironmentVariable("Path", "Machine")
-if ($existingPath -notlike "*$gondalfPath*") {
-    $newPath = "$existingPath;$gondalfPath"
+if ($existingPath -notlike "*$gondalfDirectory*") {
+    $newPath = "$existingPath;$gondalfDirectory"
     [Environment]::SetEnvironmentVariable("Path", $newPath, "Machine")
 }
 
