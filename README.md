@@ -12,6 +12,8 @@ curl -fsSL https://raw.githubusercontent.com/developia-io/gondalf/master/scripts
 
 ### Windows
 
+Open a Powershell terminal as administrator and run the following command:
+
 ```powershell
 powershell -c "irm https://raw.githubusercontent.com/developia-io/gondalf/master/scripts/install.ps1 | iex"
 ```
