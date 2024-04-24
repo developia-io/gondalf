@@ -1,0 +1,12 @@
+# This file is used to configure the templates that are available to the user when
+# creating a new project.
+
+[[templates]]
+name = "Next.js Material UI"
+description = "Next.js and Material UI template."
+url = "https://github.com/developia-io/next-mui-template.git"
+
+[[templates]]
+name = "Next.js Ant Design"
+description = "Next.js and Ant Design template."
+url = "https://github.com/developia-io/next-ant-template.git"
