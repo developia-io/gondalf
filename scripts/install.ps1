@@ -2,7 +2,7 @@ $version = "0.0.1"
 $os = "windows"
 $arch = if ([Environment]::Is64BitOperatingSystem) { "amd64" } else { "386" }
 
-Write-Host "Downloading and installing Gondalf $version for $os/$arch..."
+Write-Host "Downloading and installing gondalf $version for $os/$arch..."
 
 $url = "https://github.com/developia-io/gondalf/releases/download/v$version/gondalf-windows-$arch.zip"
 Invoke-WebRequest -Uri $url -OutFile "$env:TEMP\gondalf.zip"
@@ -15,4 +15,4 @@ if ($existingPath -notlike "*$gondalfDirectory*") {
     [Environment]::SetEnvironmentVariable("Path", $newPath, "Machine")
 }
 
-Write-Host "Gondalf $version has been installed successfully!"
+Write-Host "gondalf $version has been installed successfully!"

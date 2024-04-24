@@ -18,9 +18,9 @@ elif [ "$arch" == "x86_64" ]; then
     arch="amd64"
 fi
   
-echo "Downloading and installing Gondalf $version for $os/$arch..."
+echo "Downloading and installing gondalf $version for $os/$arch..."
 
 url="https://github.com/developia-io/gondalf/releases/download/v$version/gondalf-$os-$arch.tar.gz"
 curl -sL "$url" | sudo tar xz -C /usr/local/bin
 
-echo "Gondalf $version has been installed successfully!"
+echo "gondalf $version has been installed successfully!"
