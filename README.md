@@ -7,7 +7,7 @@ A simple scaffolding tool for creating new Node.js projects.
 ### Linux and macOS
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/developia-io/gondalf/master/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/developia-io/gondalf/master/scripts/install.sh | sudo bash
 ```
 
 ### Windows

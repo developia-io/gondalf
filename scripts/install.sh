@@ -21,6 +21,6 @@ fi
 echo "Downloading and installing gondalf $version for $os/$arch..."
 
 url="https://github.com/developia-io/gondalf/releases/download/v$version/gondalf-$os-$arch.tar.gz"
-curl -sL "$url" | sudo tar xz -C /usr/local/bin
+curl -sL "$url" | tar xz -C /usr/local/bin
 
 echo "gondalf $version has been installed successfully!"
