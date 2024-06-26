@@ -2,6 +2,11 @@
 # creating a new project.
 
 [[templates]]
+name = "Next.js"
+description = "Next.js template."
+url = "https://github.com/developia-io/nextjs-template"
+
+[[templates]]
 name = "Next.js Material UI"
 description = "Next.js and Material UI template."
 url = "https://github.com/developia-io/next-mui-template.git"

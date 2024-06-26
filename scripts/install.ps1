@@ -1,4 +1,4 @@
-$version = "0.0.1"
+$version = "0.0.2"
 $os = "windows"
 $arch = if ([Environment]::Is64BitOperatingSystem) { "amd64" } else { "386" }
 
