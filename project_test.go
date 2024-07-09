@@ -14,7 +14,7 @@ func TestCloneRepository(t *testing.T) {
 	}
 	defer os.RemoveAll(tempDir)
 
-	url := "https://github.com/developia-io/gandalf.git"
+	url := "https://github.com/developia-io/gondalf.git"
 
 	err = CloneRepository(url, tempDir)
 

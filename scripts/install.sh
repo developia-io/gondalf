@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-version="0.0.2"
+version="0.0.3"
 os=$(uname -s | tr '[:upper:]' '[:lower:]')
 arch=$(uname -m)
 

@@ -21,7 +21,10 @@ func RunForm(recipe *Recipe) error {
 			),
 		),
 		huh.NewGroup(
-			huh.NewConfirm().Title("Install").Description("Would you like to install the project dependencies?").Value(&recipe.Install),
+			huh.NewConfirm().Title("UI Library").Description("Would you like to use Developia UI library?").Value(&recipe.UseUILibrary),
+		),
+		huh.NewGroup(
+			huh.NewConfirm().Title("Install").Description("Would you like to install the project dependencies?").Value(&recipe.InstallDependencies),
 		).WithHideFunc(func() bool {
 			return len(pms) <= 0
 		},
@@ -31,7 +34,7 @@ func RunForm(recipe *Recipe) error {
 				PackageManagerOptions(pms)...,
 			),
 		).WithHideFunc(func() bool {
-			return !recipe.Install
+			return !recipe.InstallDependencies
 		},
 		),
 	)
