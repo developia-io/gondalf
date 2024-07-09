@@ -5,10 +5,11 @@ import (
 )
 
 type Recipe struct {
-	ProjectName    string
-	Url            string
-	Install        bool
-	PackageManager PackageManager
+	ProjectName         string
+	Url                 string
+	InstallDependencies bool
+	UseUILibrary        bool
+	PackageManager      PackageManager
 }
 
 func main() {
